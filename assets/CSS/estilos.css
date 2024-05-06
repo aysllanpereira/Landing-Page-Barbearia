@@ -1,26 +1,71 @@
 @charset "UTF-8";
 
-.nav {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    height: 80px;
-    align-items: center;
+.bg-primary-color {
+    background-color: #333;
 }
 
-.nav-link {
-    color: white;
+.bg-dark-color {
+    background-color: #050505;
 }
 
-.parallax {
-    background-image: url(../imagens/header\ \(2\).jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 40vh;
+.primary-color {
+    background-color: #ffff;
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    color: #ffff;
+}
+
+.nav-item a {
+    color: #ffff;
+}
+
+.nav-item a:hover {
+    color: blue;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+#navbar-items .navbar-nav {
     display: flex;
-    align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+#navbar-items .nav-item {
+    margin: 0 1em;
+}
+
+#slider {
+    margin-top: 13em;
+    margin-bottom: 1em;
+}
+
+.carrossel {
+    background-color: #333;
+    height: 30%;
+}
+
+.carousel-item img {
+    height: 30%;
+}
+
+#slider .btn {
+    padding: 0.3 0.8em;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.carousel-control-prev i, 
+.carousel-control-next i {
     color: white;
-    text-align: center;
+    font-size: 30px;
 }
 
 .text {
@@ -35,8 +80,14 @@
     font-weight: bold;
 }
 
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 3s;
+}
+
 .my-card {
-    margin: 0 25px;
+    margin: 0 10px;
 }
 
 .card-body {
@@ -62,18 +113,40 @@
     font-weight: bold;
 }
 
-.carousel-item img {
-    width: 500px; 
-    height: 450px; 
-}
-
-.contact {
+.parallax {
+    background-image: url(../imagens/header\ \(2\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
     display: flex;
+    align-items: center;
     justify-content: center;
+    color: white;
+    text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-}
 
-.contact h3 {
-    font-weight: bold;
+  }
+
+  .texto a {
+    text-decoration: none;
+    color: white;
+  }
+
+
+@media screen and (max-width: 425px) {
+    #team-cards .row {
+        display: flex;
+        justify-content: center; /* Centraliza os cards */
+    }
+
+    #team-cards .col-md-3 {
+        width: 75%; /* Define a largura das colunas para 50% */
+        margin: 18px; /* Adiciona espaçamento entre os cards */
+    }
+
+    .my-card .card-img-top {
+        width: 100%; /* Largura total para as imagens dos cards */
+        height: auto; /* Altura automática */
+    }
 }
