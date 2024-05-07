@@ -1,10 +1,9 @@
 
-// rolagem de página
 // pegando o corpo da página
 const element = document.body;
 
 // função rolagem de página suave
-function rolagemPagina(elemento) {
+function pageScrolling(elemento) {
     // selecionando o elemento e fazendo com que seja suave a rolagem de página com o smooth
     document.querySelector(elemento).scrollIntoView({ behavior: "smooth" });
 }
@@ -13,7 +12,7 @@ document.querySelector("#home").addEventListener("click", function(event) {
     // tirando o efeito padrão 
     event.preventDefault();
     // colocando a função ao elemento da página
-    rolagemPagina("#btheader");
+    pageScrolling("#btheader");
 });
 
 // selecionando o elemento e adicionando um evento de click pra ele
@@ -21,28 +20,28 @@ document.querySelector("#cortes").addEventListener("click", function(event) {
     // tirando o efeito padrão 
     event.preventDefault();
     // colocando a função ao elemento da página
-    rolagemPagina("#cardsScroll");
+    pageScrolling("#cardsScroll");
 });
 
 document.querySelector("#sobreNos").addEventListener("click", function(event) {
     // tirando o efeito padrão 
     event.preventDefault();
     // colocando a função ao elemento da página
-    rolagemPagina("#btsobreNos");
+    pageScrolling("#btsobreNos");
 });
 
 document.querySelector("#localizacao").addEventListener("click", function(event) {
     // tirando o efeito padrão 
     event.preventDefault();
     // colocando a função ao elemento da página
-    rolagemPagina("#localization");
+    pageScrolling("#localization");
 });
 
 document.querySelector("#contatos").addEventListener("click", function(event) {
     // tirando o efeito padrão 
     event.preventDefault();
     // colocando a função ao elemento da página
-    rolagemPagina("#contact");
+    pageScrolling("#contact");
 });
 
 

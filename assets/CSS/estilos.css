@@ -1,3 +1,5 @@
+/* estilização geral */
+
 @charset "UTF-8";
 
 body {
@@ -31,10 +33,11 @@ body {
 }
 
 .navbar-brand img {
-    width: 30px;
+    width: 15px;
 }
 
 .navbar-brand span {
+    font-size: 18px;
     color: #ffff;
 }
 
@@ -61,7 +64,7 @@ body {
 }
 
 #slider {
-    margin-top: 13em;
+    margin-top: 180px;
     margin-bottom: 1em;
 }
 
@@ -207,6 +210,7 @@ footer {
     color: #25d366; /* Verde do Whatsapp */
 }
 
+/* celular */
 @media screen and (max-width: 568px) {
     #team-cards .row {
         display: flex;
@@ -223,27 +227,78 @@ footer {
         height: auto; 
     }
 
+    .texto p {
+        font-size: 1em;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
+        font-weight: bold;
+    }
+
+    footer {
+        height: 380px;
+    }
+
 }
 
-@media screen and (min-width: 768px) {
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
 
     #team-cards .row {
-        display: flex;
         justify-content: center;
     }
 
-    .carousel-caption {
-        margin-bottom: 26%;
+    #team-cards .col-md-3 {
+        width: 45%;
+        margin: 10px; 
+        padding: 10px;
     }
-
+    .carousel-caption {
+        margin-bottom: 15%;
+    }
+    
     .carousel-caption h3 {
         font-size: 3em;
         text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
         font-weight: bold;
     }
-
+    
     .carousel-caption p {
         font-size: 1em;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
+        font-weight: bold;
+    }
+
+    .texto p {
+        font-size: 1.5em;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
+        font-weight: bold;
+    }
+    
+    footer {
+        margin-top: 50px;
+        height: 280px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1280px){
+    .carousel-caption {
+        margin-bottom: 26%;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 3em;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
+        font-weight: bold;
+    }
+    
+    .carousel-caption p {
+        font-size: 1em;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
+        font-weight: bold;
+    }
+
+    .texto p {
+        font-size: 20px;
         text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
         font-weight: bold;
     }
@@ -253,4 +308,3 @@ footer {
         height: 280px;
     }
 }
-
