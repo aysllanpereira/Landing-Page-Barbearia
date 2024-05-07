@@ -1,15 +1,33 @@
 @charset "UTF-8";
 
+body {
+    background-color: #050505d8;
+    color: #ffff;
+}
+
 .bg-primary-color {
-    background-color: #333;
+    background-color: #000000;
 }
 
 .bg-dark-color {
-    background-color: #050505;
+    background-color: #050505d8;
 }
 
 .primary-color {
     background-color: #ffff;
+}
+
+.bg-footer {
+    background-color: #000000;
+}
+
+.navbar-nav a:hover {
+    border-bottom: 1px solid white;
+    color: #ffff;
+}
+
+.navbar-brand {
+    border-bottom: 1px solid white;
 }
 
 .navbar-brand img {
@@ -22,10 +40,6 @@
 
 .nav-item a {
     color: #ffff;
-}
-
-.nav-item a:hover {
-    color: blue;
 }
 
 .navbar-toggler {
@@ -48,7 +62,6 @@
 }
 
 .carrossel {
-    background-color: #333;
     height: 30%;
 }
 
@@ -94,6 +107,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(169, 169, 169, 0.801);
 }
 
 .card-body p {
@@ -123,15 +137,51 @@
     justify-content: center;
     color: white;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;
 
   }
 
-  .texto a {
+.container .texto {
+    display: flex;
+}
+
+.texto {
+    background-color: rgba(255, 252, 252, 0.5);
+    width: 150px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    max-width: 80%; 
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.texto a {
     text-decoration: none;
     color: white;
-  }
+}
+
+.h3-localization {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+iframe {
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.container-fluid footer {
+    background-color: black;
+}
 
 
 @media screen and (max-width: 425px) {
@@ -148,5 +198,24 @@
     .my-card .card-img-top {
         width: 100%; /* Largura total para as imagens dos cards */
         height: auto; /* Altura automática */
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .carousel-caption {
+        margin-bottom: 26%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 3em;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
+        font-weight: bold;
+    }
+
+    .carousel-caption p {
+        font-size: 1em;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
+        font-weight: bold;
     }
 }
