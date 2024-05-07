@@ -13,7 +13,7 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <!-- navbar -->
-    <header>
+    <header id="btheader">
         <nav class="navbar navbar-expand-lg fixed-top bg-dark-color" id="navbar">
             <div class="container py-3">
                 <a href="#" class="navbar-brand">
@@ -34,19 +34,19 @@
                 <div class="collapse navbar-collapse" id="navbar-items">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#section1" class="nav-link" aria-current="page">Home</a>
+                            <a href="#section1" class="nav-link" aria-current="page" id="home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#section2" class="nav-link">Cortes</a>
+                            <a href="#section2" class="nav-link" id="cortes">Cortes</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#section3" class="nav-link">Whatsapp</a>
+                            <a href="#section3" class="nav-link" id="whatsapp">Whatsapp</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#section4" class="nav-link">Localização</a>
+                            <a href="#section4" class="nav-link" id="localizacao">Localização</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#section5" class="nav-link">Contatos</a>
+                            <a href="#section5" class="nav-link" id="contatos">Contatos</a>
                         </li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
     </header>
 
     <!-- corpo -->
-     <main> 
+     <main id="btinicio"> 
         <!-- slider -->
         <section class="carrossel">
             <div class="container" id="slider-container">
@@ -119,6 +119,7 @@
             </div>
         </section>
 
+        <div id="cardsScroll"></div>
         <!-- seção de cortes com cards -->
          <div id="team-cards">
             <div class="container" id="#section2">
@@ -132,7 +133,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Barba</h5>
                                 <p class="card-text">R$ 50,00</p>
-                                <a href="#" class="btn btn-primary">Agendar</a>
+                                <a href="#" class="btn btn-primary" onclick="sendMessage('Barba')">Agendar</a>
                             </div>
                         </div>
                     </div>    
@@ -142,7 +143,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Cabelo e Barba</h5>
                                 <p class="card-text">R$ 150,00</p>
-                                <a href="#" class="btn btn-primary">Agendar</a>
+                                <a href="#" class="btn btn-primary" onclick="sendMessage('Cabelo e Barba')">Agendar</a>
                             </div>
                         </div>
                     </div>    
@@ -152,7 +153,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Cabelo</h5>
                                 <p class="card-text">R$ 100,00</p>
-                                <a href="#" class="btn btn-primary">Agendar</a>
+                                <a href="#" class="btn btn-primary" onclick="sendMessage('Cabelo')">Agendar</a>
                             </div>
                         </div>
                     </div>   
@@ -162,7 +163,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Personalizado</h5>
                                 <p class="card-text">R$ 180,00</p>
-                                <a href="#" class="btn btn-primary">Agendar</a>
+                                <a href="#" class="btn btn-primary" onclick="sendMessage('Personalizado')">Agendar</a>
                             </div>
                         </div>
                     </div>
@@ -171,21 +172,18 @@
         </div> 
 
         <!-- parallax -->
-        <section class="parallax">
+        <section class="parallax" id="btwhatsapp">
             <div class="container">
                 <div class="row">
-                    <div class="texto1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis voluptates cum sequi natus est reprehenderit obcaecati mollitia nemo, nisi debitis aut repellendus illum id, quisquam sunt. Dolor, dignissimos eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, odio quos impedit ad delectus vel ab nam. Voluptate officiis exercitationem id deserunt sint, esse recusandae iusto, repudiandae saepe quibusdam laudantium.</p>
-                    </div>
                     <div class="texto">
-                        <a href="#">Nosso Whatsapp</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis voluptates cum sequi natus est reprehenderit obcaecati mollitia nemo, nisi debitis aut repellendus illum id, quisquam sunt. Dolor, dignissimos eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, odio quos impedit ad delectus vel ab nam. Voluptate officiis exercitationem id deserunt sint, esse recusandae iusto, repudiandae saepe quibusdam laudantium.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- localização -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="localization">
             <div class="row">
                 <div class="h3-localization">
                     <h3>Localização</h3>
@@ -201,7 +199,7 @@
 
     </main> 
     <!-- contatos -->
-    <footer class="container-fluid bg-footer">
+    <footer class="container-fluid bg-footer" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -222,5 +220,6 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/JavaScript/barber.js"></script>
 </body>
 </html>
