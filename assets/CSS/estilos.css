@@ -81,6 +81,16 @@ body {
     font-size: 30px;
 }
 
+.carousel-caption h3 {
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
+    font-weight: bold;
+}
+
 .text {
     display: flex;
     justify-content: center;
@@ -139,7 +149,7 @@ body {
     text-align: center;
     margin-top: 80px;
 
-  }
+}
 
 .container .texto {
     display: flex;
@@ -177,32 +187,65 @@ iframe {
 
 footer {
     margin-top: 50px;
+    height: 380px;
 }
 
 .container-fluid footer {
     background-color: black;
+    align-items: center;
 }
 
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
 
-@media screen and (max-width: 425px) {
+.col-4 i{
+    font-size: 18px;
+    padding: 8px;
+}
+
+.col-4 i:hover {
+    cursor: pointer;
+}
+
+.icon-facebook:hover {
+    color: #3b5998; /* Azul do Facebook */
+}
+
+.icon-instagram:hover {
+    color: #bc2a8d; /* Rosa do Instagram */
+}
+
+.icon-whatsapp:hover {
+    color: #25d366; /* Verde do Whatsapp */
+}
+
+@media screen and (max-width: 568px) {
     #team-cards .row {
         display: flex;
-        justify-content: center; /* Centraliza os cards */
+        justify-content: center; 
     }
 
     #team-cards .col-md-3 {
-        width: 75%; /* Define a largura das colunas para 50% */
-        margin: 18px; /* Adiciona espaçamento entre os cards */
+        width: 75%; 
+        margin: 18px; 
     }
 
     .my-card .card-img-top {
-        width: 100%; /* Largura total para as imagens dos cards */
-        height: auto; /* Altura automática */
+        width: 100%; 
+        height: auto; 
     }
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+
+    #team-cards .row {
+        display: flex;
+        justify-content: center;
+    }
+
     .carousel-caption {
         margin-bottom: 26%;
     }
@@ -218,4 +261,10 @@ footer {
         text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
         font-weight: bold;
     }
+
+    footer {
+        margin-top: 50px;
+        height: 280px;
+    }
 }
+
