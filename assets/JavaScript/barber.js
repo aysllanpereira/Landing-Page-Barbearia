@@ -24,11 +24,11 @@ document.querySelector("#cortes").addEventListener("click", function(event) {
     rolagemPagina("#cardsScroll");
 });
 
-document.querySelector("#whatsapp").addEventListener("click", function(event) {
+document.querySelector("#sobreNos").addEventListener("click", function(event) {
     // tirando o efeito padrão 
     event.preventDefault();
     // colocando a função ao elemento da página
-    rolagemPagina("#btwhatsapp");
+    rolagemPagina("#btsobreNos");
 });
 
 document.querySelector("#localizacao").addEventListener("click", function(event) {
