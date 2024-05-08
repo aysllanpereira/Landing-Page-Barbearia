@@ -211,7 +211,7 @@ footer {
 }
 
 /* celular */
-@media screen and (max-width: 568px) {
+@media screen and (min-width: 320px) and (max-width: 568px) {
     #team-cards .row {
         display: flex;
         justify-content: center; 
@@ -228,7 +228,7 @@ footer {
     }
 
     .texto p {
-        font-size: 1em;
+        font-size: 15px;
         text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
         font-weight: bold;
     }
@@ -268,7 +268,7 @@ footer {
     }
 
     .texto p {
-        font-size: 1.5em;
+        font-size: 18px;
         text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.884);
         font-weight: bold;
     }

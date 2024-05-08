@@ -56,4 +56,4 @@ function sendMessage(tipo) {
     // redirecionando para o link
     window.open(link);
 
-}
+} 
